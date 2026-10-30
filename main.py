@@ -82,7 +82,7 @@ def main():
     model = load_model_from_json(json_filename)
 
     # Параметры задачи
-    SOURCE = np.array([0.0, 0.0, 1800.0])
+    SOURCE = np.array([1000.0, 0.0, 1000.0])
     WAVE_TYPE = 'qP'                      # Тип волны ('qP', 'qS1', 'qS2')
     mode_index = {'qS1': 0, 'qS2': 1, 'qP': 2}[WAVE_TYPE]
 

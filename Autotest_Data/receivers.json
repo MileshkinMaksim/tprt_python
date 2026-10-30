@@ -1,0 +1,1610 @@
+[
+    {
+        "receiver_number": 1,
+        "coordinates": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 2,
+        "coordinates": {
+            "x": 10.05,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 3,
+        "coordinates": {
+            "x": 20.1,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 4,
+        "coordinates": {
+            "x": 30.15,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 5,
+        "coordinates": {
+            "x": 40.2,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 6,
+        "coordinates": {
+            "x": 50.25,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 7,
+        "coordinates": {
+            "x": 60.3,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 8,
+        "coordinates": {
+            "x": 70.35,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 9,
+        "coordinates": {
+            "x": 80.4,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 10,
+        "coordinates": {
+            "x": 90.45,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 11,
+        "coordinates": {
+            "x": 100.5,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 12,
+        "coordinates": {
+            "x": 110.55,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 13,
+        "coordinates": {
+            "x": 120.6,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 14,
+        "coordinates": {
+            "x": 130.65,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 15,
+        "coordinates": {
+            "x": 140.7,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 16,
+        "coordinates": {
+            "x": 150.75,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 17,
+        "coordinates": {
+            "x": 160.8,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 18,
+        "coordinates": {
+            "x": 170.85,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 19,
+        "coordinates": {
+            "x": 180.9,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 20,
+        "coordinates": {
+            "x": 190.95,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 21,
+        "coordinates": {
+            "x": 201.0,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 22,
+        "coordinates": {
+            "x": 211.05,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 23,
+        "coordinates": {
+            "x": 221.1,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 24,
+        "coordinates": {
+            "x": 231.15,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 25,
+        "coordinates": {
+            "x": 241.2,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 26,
+        "coordinates": {
+            "x": 251.25,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 27,
+        "coordinates": {
+            "x": 261.3,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 28,
+        "coordinates": {
+            "x": 271.35,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 29,
+        "coordinates": {
+            "x": 281.4,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 30,
+        "coordinates": {
+            "x": 291.45,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 31,
+        "coordinates": {
+            "x": 301.5,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 32,
+        "coordinates": {
+            "x": 311.55,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 33,
+        "coordinates": {
+            "x": 321.6,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 34,
+        "coordinates": {
+            "x": 331.65,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 35,
+        "coordinates": {
+            "x": 341.7,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 36,
+        "coordinates": {
+            "x": 351.75,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 37,
+        "coordinates": {
+            "x": 361.8,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 38,
+        "coordinates": {
+            "x": 371.85,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 39,
+        "coordinates": {
+            "x": 381.9,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 40,
+        "coordinates": {
+            "x": 391.95,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 41,
+        "coordinates": {
+            "x": 402.0,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 42,
+        "coordinates": {
+            "x": 412.05,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 43,
+        "coordinates": {
+            "x": 422.1,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 44,
+        "coordinates": {
+            "x": 432.15,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 45,
+        "coordinates": {
+            "x": 442.2,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 46,
+        "coordinates": {
+            "x": 452.25,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 47,
+        "coordinates": {
+            "x": 462.3,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 48,
+        "coordinates": {
+            "x": 472.35,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 49,
+        "coordinates": {
+            "x": 482.4,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 50,
+        "coordinates": {
+            "x": 492.45,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 51,
+        "coordinates": {
+            "x": 502.5,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 52,
+        "coordinates": {
+            "x": 512.55,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 53,
+        "coordinates": {
+            "x": 522.6,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 54,
+        "coordinates": {
+            "x": 532.65,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 55,
+        "coordinates": {
+            "x": 542.7,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 56,
+        "coordinates": {
+            "x": 552.75,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 57,
+        "coordinates": {
+            "x": 562.8,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 58,
+        "coordinates": {
+            "x": 572.85,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 59,
+        "coordinates": {
+            "x": 582.9,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 60,
+        "coordinates": {
+            "x": 592.95,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 61,
+        "coordinates": {
+            "x": 603.0,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 62,
+        "coordinates": {
+            "x": 613.05,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 63,
+        "coordinates": {
+            "x": 623.1,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 64,
+        "coordinates": {
+            "x": 633.15,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 65,
+        "coordinates": {
+            "x": 643.2,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 66,
+        "coordinates": {
+            "x": 653.25,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 67,
+        "coordinates": {
+            "x": 663.3,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 68,
+        "coordinates": {
+            "x": 673.35,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 69,
+        "coordinates": {
+            "x": 683.4,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 70,
+        "coordinates": {
+            "x": 693.45,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 71,
+        "coordinates": {
+            "x": 703.5,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 72,
+        "coordinates": {
+            "x": 713.55,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 73,
+        "coordinates": {
+            "x": 723.6,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 74,
+        "coordinates": {
+            "x": 733.65,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 75,
+        "coordinates": {
+            "x": 743.7,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 76,
+        "coordinates": {
+            "x": 753.75,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 77,
+        "coordinates": {
+            "x": 763.8,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 78,
+        "coordinates": {
+            "x": 773.85,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 79,
+        "coordinates": {
+            "x": 783.9,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 80,
+        "coordinates": {
+            "x": 793.95,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 81,
+        "coordinates": {
+            "x": 804.0,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 82,
+        "coordinates": {
+            "x": 814.05,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 83,
+        "coordinates": {
+            "x": 824.1,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 84,
+        "coordinates": {
+            "x": 834.15,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 85,
+        "coordinates": {
+            "x": 844.2,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 86,
+        "coordinates": {
+            "x": 854.25,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 87,
+        "coordinates": {
+            "x": 864.3,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 88,
+        "coordinates": {
+            "x": 874.35,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 89,
+        "coordinates": {
+            "x": 884.4,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 90,
+        "coordinates": {
+            "x": 894.45,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 91,
+        "coordinates": {
+            "x": 904.5,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 92,
+        "coordinates": {
+            "x": 914.55,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 93,
+        "coordinates": {
+            "x": 924.6,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 94,
+        "coordinates": {
+            "x": 934.65,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 95,
+        "coordinates": {
+            "x": 944.7,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 96,
+        "coordinates": {
+            "x": 954.75,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 97,
+        "coordinates": {
+            "x": 964.8,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 98,
+        "coordinates": {
+            "x": 974.85,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 99,
+        "coordinates": {
+            "x": 984.9,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 100,
+        "coordinates": {
+            "x": 994.95,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 101,
+        "coordinates": {
+            "x": 1005.0,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 102,
+        "coordinates": {
+            "x": 1015.05,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 103,
+        "coordinates": {
+            "x": 1025.1,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 104,
+        "coordinates": {
+            "x": 1035.15,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 105,
+        "coordinates": {
+            "x": 1045.2,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 106,
+        "coordinates": {
+            "x": 1055.25,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 107,
+        "coordinates": {
+            "x": 1065.3,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 108,
+        "coordinates": {
+            "x": 1075.35,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 109,
+        "coordinates": {
+            "x": 1085.4,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 110,
+        "coordinates": {
+            "x": 1095.45,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 111,
+        "coordinates": {
+            "x": 1105.5,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 112,
+        "coordinates": {
+            "x": 1115.55,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 113,
+        "coordinates": {
+            "x": 1125.6,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 114,
+        "coordinates": {
+            "x": 1135.65,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 115,
+        "coordinates": {
+            "x": 1145.7,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 116,
+        "coordinates": {
+            "x": 1155.75,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 117,
+        "coordinates": {
+            "x": 1165.8,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 118,
+        "coordinates": {
+            "x": 1175.85,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 119,
+        "coordinates": {
+            "x": 1185.9,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 120,
+        "coordinates": {
+            "x": 1195.95,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 121,
+        "coordinates": {
+            "x": 1206.0,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 122,
+        "coordinates": {
+            "x": 1216.05,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 123,
+        "coordinates": {
+            "x": 1226.1,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 124,
+        "coordinates": {
+            "x": 1236.15,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 125,
+        "coordinates": {
+            "x": 1246.2,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 126,
+        "coordinates": {
+            "x": 1256.25,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 127,
+        "coordinates": {
+            "x": 1266.3,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 128,
+        "coordinates": {
+            "x": 1276.35,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 129,
+        "coordinates": {
+            "x": 1286.4,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 130,
+        "coordinates": {
+            "x": 1296.45,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 131,
+        "coordinates": {
+            "x": 1306.5,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 132,
+        "coordinates": {
+            "x": 1316.55,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 133,
+        "coordinates": {
+            "x": 1326.6,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 134,
+        "coordinates": {
+            "x": 1336.65,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 135,
+        "coordinates": {
+            "x": 1346.7,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 136,
+        "coordinates": {
+            "x": 1356.75,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 137,
+        "coordinates": {
+            "x": 1366.8,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 138,
+        "coordinates": {
+            "x": 1376.85,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 139,
+        "coordinates": {
+            "x": 1386.9,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 140,
+        "coordinates": {
+            "x": 1396.95,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 141,
+        "coordinates": {
+            "x": 1407.0,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 142,
+        "coordinates": {
+            "x": 1417.05,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 143,
+        "coordinates": {
+            "x": 1427.1,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 144,
+        "coordinates": {
+            "x": 1437.15,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 145,
+        "coordinates": {
+            "x": 1447.2,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 146,
+        "coordinates": {
+            "x": 1457.25,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 147,
+        "coordinates": {
+            "x": 1467.3,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 148,
+        "coordinates": {
+            "x": 1477.35,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 149,
+        "coordinates": {
+            "x": 1487.4,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 150,
+        "coordinates": {
+            "x": 1497.45,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 151,
+        "coordinates": {
+            "x": 1507.5,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 152,
+        "coordinates": {
+            "x": 1517.55,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 153,
+        "coordinates": {
+            "x": 1527.6,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 154,
+        "coordinates": {
+            "x": 1537.65,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 155,
+        "coordinates": {
+            "x": 1547.7,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 156,
+        "coordinates": {
+            "x": 1557.75,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 157,
+        "coordinates": {
+            "x": 1567.8,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 158,
+        "coordinates": {
+            "x": 1577.85,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 159,
+        "coordinates": {
+            "x": 1587.9,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 160,
+        "coordinates": {
+            "x": 1597.95,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 161,
+        "coordinates": {
+            "x": 1608.0,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 162,
+        "coordinates": {
+            "x": 1618.05,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 163,
+        "coordinates": {
+            "x": 1628.1,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 164,
+        "coordinates": {
+            "x": 1638.15,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 165,
+        "coordinates": {
+            "x": 1648.2,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 166,
+        "coordinates": {
+            "x": 1658.25,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 167,
+        "coordinates": {
+            "x": 1668.3,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 168,
+        "coordinates": {
+            "x": 1678.35,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 169,
+        "coordinates": {
+            "x": 1688.4,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 170,
+        "coordinates": {
+            "x": 1698.45,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 171,
+        "coordinates": {
+            "x": 1708.5,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 172,
+        "coordinates": {
+            "x": 1718.55,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 173,
+        "coordinates": {
+            "x": 1728.6,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 174,
+        "coordinates": {
+            "x": 1738.65,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 175,
+        "coordinates": {
+            "x": 1748.7,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 176,
+        "coordinates": {
+            "x": 1758.75,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 177,
+        "coordinates": {
+            "x": 1768.8,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 178,
+        "coordinates": {
+            "x": 1778.85,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 179,
+        "coordinates": {
+            "x": 1788.9,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 180,
+        "coordinates": {
+            "x": 1798.95,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 181,
+        "coordinates": {
+            "x": 1809.0,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 182,
+        "coordinates": {
+            "x": 1819.05,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 183,
+        "coordinates": {
+            "x": 1829.1,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 184,
+        "coordinates": {
+            "x": 1839.15,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 185,
+        "coordinates": {
+            "x": 1849.2,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 186,
+        "coordinates": {
+            "x": 1859.25,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 187,
+        "coordinates": {
+            "x": 1869.3,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 188,
+        "coordinates": {
+            "x": 1879.35,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 189,
+        "coordinates": {
+            "x": 1889.4,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 190,
+        "coordinates": {
+            "x": 1899.45,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 191,
+        "coordinates": {
+            "x": 1909.5,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 192,
+        "coordinates": {
+            "x": 1919.55,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 193,
+        "coordinates": {
+            "x": 1929.6,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 194,
+        "coordinates": {
+            "x": 1939.65,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 195,
+        "coordinates": {
+            "x": 1949.7,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 196,
+        "coordinates": {
+            "x": 1959.75,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 197,
+        "coordinates": {
+            "x": 1969.8,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 198,
+        "coordinates": {
+            "x": 1979.85,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 199,
+        "coordinates": {
+            "x": 1989.9,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 200,
+        "coordinates": {
+            "x": 1999.95,
+            "y": 0.0,
+            "z": 0.0
+        }
+    },
+    {
+        "receiver_number": 201,
+        "coordinates": {
+            "x": 2010.0,
+            "y": 0.0,
+            "z": 0.0
+        }
+    }
+]

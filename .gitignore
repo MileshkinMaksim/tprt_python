@@ -11,3 +11,5 @@ __pycache__/
 *.log
 .vscode/
 .idea/
+*.xml
+autotest_report.json
