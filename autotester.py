@@ -1,96 +1,18 @@
+# autotester.py
 import os
 import json
 import numpy as np
-import scipy.optimize as opt
 import matplotlib.pyplot as plt
 
-# =============================================================================
-# 1. МАТЕМАТИЧЕСКИЙ БЛОК: VTI-СРЕДА И ФАЗОВЫЕ / ГРУППОВЫЕ СКОРОСТИ
-# =============================================================================
-
-def thomsen_to_voigt(vp0, vs0, epsilon, delta, gamma, rho):
-    """Преобразование параметров Томпсена в тензор жесткости Фойгта C_ij (Па)."""
-    c33 = rho * (vp0 ** 2)
-    c44 = rho * (vs0 ** 2)
-    c11 = c33 * (1.0 + 2.0 * epsilon)
-    c66 = c44 * (1.0 + 2.0 * gamma)
-    
-    val = 2.0 * delta * c33 * (c33 - c44) + (c33 - c44)**2
-    c13 = np.sqrt(val) - c44 if val >= 0 else 0.0
-    c12 = c11 - 2.0 * c66
-    
-    C = np.zeros((6, 6))
-    C[0, 0] = c11; C[1, 1] = c11; C[2, 2] = c33
-    C[3, 3] = c44; C[4, 4] = c44; C[5, 5] = c66
-    C[0, 1] = c12; C[1, 0] = c12
-    C[0, 2] = c13; C[2, 0] = c13
-    C[1, 2] = c13; C[2, 1] = c13
-    return C
-
-def voigt_to_tensor(C_voigt, rho):
-    """Преобразование матрицы C_ij в 4-ранговый тензор A_ijkl = C_ijkl / rho."""
-    A = np.zeros((3, 3, 3, 3))
-    voigt_map = {(0, 0): 0, (1, 1): 1, (2, 2): 2, (1, 2): 3, (2, 1): 3,
-                 (0, 2): 4, (2, 0): 4, (0, 1): 5, (1, 0): 5}
-    for i in range(3):
-        for j in range(3):
-            for k in range(3):
-                for l in range(3):
-                    A[i, j, k, l] = C_voigt[voigt_map[(i, j)], voigt_map[(k, l)]] / rho
-    return A
-
-def compute_group_velocity(A_tensor, np_phase, mode_idx):
-    """
-    Вычисление групповой скорости v_group по фазовой нормали np_phase.
-    mode_idx: 0 -> qS1, 1 -> qS2, 2 -> qP (по возрастанию фазовых скоростей).
-    """
-    n = np_phase / np.linalg.norm(np_phase)
-    Gamma = np.einsum('ijkl,i,k->jl', A_tensor, n, n)
-    eigvals, eigvecs = np.linalg.eigh(Gamma)
-    
-    sorted_idx = np.argsort(eigvals)
-    selected_mode = sorted_idx[mode_idx]
-    
-    V_phase = np.sqrt(eigvals[selected_mode])
-    w = eigvecs[:, selected_mode]
-    
-    v_group = np.einsum('rjkl,k,l,j->r', A_tensor, n, w, w) / V_phase
-    return v_group, V_phase
-
-def calculate_ray_travel_time(A_tensor, src_pos, rec_pos, mode_idx):
-    """Определяет точное время пробега луча от источника до приёмника в VTI-среде."""
-    ray_dir = rec_pos - src_pos
-    distance = np.linalg.norm(ray_dir)
-    if distance == 0:
-        return 0.0
-    ray_dir_norm = ray_dir / distance
-    
-    theta_geom = np.arctan2(ray_dir_norm[0], ray_dir_norm[2])
-
-    def objective(theta):
-        n_p = np.array([np.sin(theta[0]), 0.0, np.cos(theta[0])])
-        v_g, _ = compute_group_velocity(A_tensor, n_p, mode_idx)
-        v_g_norm = v_g / np.linalg.norm(v_g)
-        return 1.0 - np.dot(v_g_norm, ray_dir_norm)
-
-    res = opt.minimize(objective, [theta_geom], method='Nelder-Mead', tol=1e-12)
-    best_theta = res.x[0]
-    
-    n_p_opt = np.array([np.sin(best_theta), 0.0, np.cos(best_theta)])
-    v_g_opt, _ = compute_group_velocity(A_tensor, n_p_opt, mode_idx)
-    
-    v_g_mag = np.linalg.norm(v_g_opt)
-    return distance / v_g_mag
-
-
-# =============================================================================
-# 2. ОСНОВНОЙ КЛАСС АВТОТЕСТЕРА
-# =============================================================================
+from layers import LayeredVelocityModel, HomogeneousAnisotropicLayer
+from bending_solver import TwoPointBendingTracer
+from vti_utils import thomsen_to_voigt
 
 class SeismicRayTracingAutoTester:
-    def __init__(self, base_dir="Autotest_Data"):
+    def __init__(self, base_dir="."):
         self.base_dir = base_dir
         self.source_pos = np.array([1000.0, 0.0, 1000.0])
+        # Mapping wave modes to bending tracer mode indices
         self.wave_modes = {'qP': 2, 'qS1': 0, 'qS2': 1}
         self.wave_keys_true = {'qP': 'P', 'qS1': 'S1', 'qS2': 'S2'}
 
@@ -126,33 +48,52 @@ class SeismicRayTracingAutoTester:
             times_path = os.path.join(self.base_dir, times_file)
 
             if not (os.path.exists(config_path) and os.path.exists(times_path)):
-                print(f"\n[ПРОПУСК] Тест {test_idx}: отсутствуют файлы {config_file} или {times_file}")
+                print(f"\n[ПРОПУСК] Тест #{test_idx}: отсутствуют файлы {config_file} или {times_file}")
                 continue
 
             print(f"\n---> Прогон Теста #{test_idx} ({config_file})")
             
             config_data = self.load_json(config_file)
-            layer_params = config_data["layers"][0]["thomsen_parameters"]
-            rho = config_data["layers"][0].get("rho", 1000.0)
+            model = LayeredVelocityModel()
 
-            C_voigt = thomsen_to_voigt(
-                layer_params["vp0"], layer_params["vs0"],
-                layer_params["epsilon"], layer_params["delta"],
-                layer_params["gamma"], rho
-            )
-            A_tensor = voigt_to_tensor(C_voigt, rho)
+            # Сборка модели среды через vti_utils и layers
+            for l_idx, l_cfg in enumerate(config_data["layers"]):
+                p = l_cfg["thomsen_parameters"]
+                rho = l_cfg.get("rho", 1000.0)
+                
+                C_voigt = thomsen_to_voigt(
+                    vp0=p["vp0"], 
+                    vs0=p["vs0"], 
+                    epsilon=p["epsilon"], 
+                    delta=p["delta"], 
+                    gamma=p["gamma"], 
+                    rho=rho
+                )
+                
+                layer = HomogeneousAnisotropicLayer(
+                    name=l_cfg.get("name", f"Layer_{l_idx + 1}"),
+                    z_top=l_cfg["z_top"],
+                    z_bot=l_cfg["z_bot"],
+                    C_voigt=C_voigt,
+                    rho=rho
+                )
+                model.add_layer(layer)
 
             true_times_data = self.load_json(times_file)
             test_metrics = {}
 
-            for mode_name, mode_idx in self.wave_modes.items():
-                true_key = self.wave_keys_true[mode_name]
+            # Вызов TwoPointBendingTracer для каждой волны
+            for mode_name in ['qP', 'qS1', 'qS2']:
+                mode_idx = self.wave_modes[mode_name]
+                tracer = TwoPointBendingTracer(model=model, mode_idx=mode_idx)
+                
                 calc_times = []
                 true_times = []
-
+                
                 for i, rec_pos in enumerate(receivers_coords):
-                    t_calc = calculate_ray_travel_time(A_tensor, self.source_pos, rec_pos, mode_idx)
-                    t_true = true_times_data[i]["times"][true_key]
+                    res = tracer.solve(self.source_pos, rec_pos)
+                    t_calc = res['travel_time']
+                    t_true = true_times_data[i]["times"][self.wave_keys_true[mode_name]]
                     
                     calc_times.append(t_calc)
                     true_times.append(t_true)
@@ -192,7 +133,7 @@ class SeismicRayTracingAutoTester:
         report_path = os.path.join(self.base_dir, "autotest_report.json")
         with open(report_path, "w", encoding="utf-8") as f:
             json.dump(summary_results, f, ensure_ascii=False, indent=4)
-        print(f"\n[INFO] Детальный отчет сохранен в: {report_path}")
+        print(f"\n[INFO] Отчет сохранен в: {report_path}")
 
     def _print_executive_summary(self, summary_results):
         print("\n" + "=" * 80)
@@ -212,7 +153,7 @@ class SeismicRayTracingAutoTester:
             
         x_rec = [r[0] for r in receivers_coords]
         fig, axes = plt.subplots(2, 2, figsize=(14, 10))
-        fig.suptitle("Результаты автотестирования трассирования лучей (Годографы и Ошибки)", fontsize=14)
+        fig.suptitle("Результаты автотестирования трассирования лучей", fontsize=14)
 
         colors = {'qP': 'crimson', 'qS1': 'blue', 'qS2': 'forestgreen'}
 
@@ -267,11 +208,8 @@ class SeismicRayTracingAutoTester:
         plt.tight_layout()
         plot_path = os.path.join(self.base_dir, "autotest_results.png")
         plt.savefig(plot_path, dpi=300)
-        print(f"[INFO] График сравнения результатов сохранен в: {plot_path}")
+        print(f"[INFO] График сохранен в: {plot_path}")
 
-# =============================================================================
-# 3. ТОЧКА ВХОДА
-# =============================================================================
 
 if __name__ == "__main__":
     script_dir = os.path.dirname(os.path.abspath(__file__))
