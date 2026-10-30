@@ -7,7 +7,7 @@ from kinematics_3d import solve_christoffel
 
 class FastVTILayerGroupSlowness:
     """
-    Быстрый интерполятор лучевой замедленности S(psi) = 1 / V_group(psi)
+    Быстрый интерполятор вектора медленности S(psi) = 1 / V_group(psi)
     для VTI-слоя на основе кубического сплайна.
     """
     def __init__(self, layer: HomogeneousAnisotropicLayer, mode_idx: int, num_points: int = 361):
@@ -51,7 +51,7 @@ class FastVTILayerGroupSlowness:
 
 class TwoPointBendingTracer:
     """
-    Решатель двухточечной задачи лучевого трассирования методом изгиба (Bending Method)
+    Решатель двухточечной задачи лучевого трассирования методом изгиба 
     для многослойных VTI-сред с 1D-параметризацией узлов.
     """
     def __init__(self, model: LayeredVelocityModel, mode_idx: int):
@@ -104,7 +104,7 @@ class TwoPointBendingTracer:
         dx = receiver[0] - source[0]
         dy = receiver[1] - source[1]
         
-        # Начальное приближение параметров alpha вдоль горизонтальной прямой
+        # Начальное приближение
         init_alphas = np.array([(i + 1) / (num_interfaces + 1) for i in range(num_interfaces)], dtype=float)
 
         def objective(alphas):

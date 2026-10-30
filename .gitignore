@@ -1,12 +1,12 @@
-# Виртуальное окружение
+# Virtual Environment
 venv/
 .venv/
 
-# Кэш Python
+# Cache
 __pycache__/
 *.py[cod]
 
-# Временные файлы и результаты расчета
+# Temporary files
 *.png
 *.log
 .vscode/

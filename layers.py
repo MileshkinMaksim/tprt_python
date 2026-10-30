@@ -34,7 +34,6 @@ class LayeredVelocityModel:
         for layer in self.layers:
             if layer.is_inside(z):
                 return layer
-        # Если глубина на нижней границе последнего слоя
         if self.layers and np.isclose(z, self.layers[-1].z_bot):
             return self.layers[-1]
         raise ValueError(f"Глубина Z={z} выходит за пределы модели.")

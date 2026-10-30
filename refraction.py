@@ -26,7 +26,7 @@ def compute_refracted_slowness(p_inc: np.ndarray, layer_from: HomogeneousAnisotr
     res = opt.root(christoffel_error, [pz_guess], method='hybr')
     
     if not res.success or np.isnan(res.x[0]):
-        return None  # Полное внутреннее отражение
+        return None
 
     pz_refracted = abs(res.x[0]) * sign_z
     

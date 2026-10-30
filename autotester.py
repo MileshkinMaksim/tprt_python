@@ -82,7 +82,7 @@ class SeismicRayTracingAutoTester:
             true_times_data = self.load_json(times_file)
             test_metrics = {}
 
-            # Вызов TwoPointBendingTracer для каждой волны
+
             for mode_name in ['qP', 'qS1', 'qS2']:
                 mode_idx = self.wave_modes[mode_name]
                 tracer = TwoPointBendingTracer(model=model, mode_idx=mode_idx)
